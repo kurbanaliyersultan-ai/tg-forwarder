@@ -47,6 +47,7 @@ def process_message(msg):
 def main():
     offset = None
     print("Бот запущен...")
+    print(">>> ВЕРСИЯ БОЕВАЯ, DIAGNOSTIC =", DIAGNOSTIC)
     while True:
         try:
             resp = requests.get(f"{API}/getUpdates", params={
