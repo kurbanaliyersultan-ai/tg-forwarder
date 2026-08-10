@@ -6,16 +6,16 @@ import time
 TOKEN = os.environ["BOT_TOKEN"]
 
 # После диагностики впиши сюда реальные значения из логов:
-SOURCE_CHAT_ID = -1001111111111   # ID группы-источника
-SOURCE_THREAD_ID = 42             # ID вкладки в группе-источнике
-TARGET_CHAT_ID = -1002222222222   # ID группы-получателя (обычная группа)
+SOURCE_CHAT_ID = -1004332624949   # ID группы-источника
+SOURCE_THREAD_ID = 2             # ID вкладки в группе-источнике
+TARGET_CHAT_ID = -1004374638664   # ID группы-получателя (обычная группа)
 
 API = f"https://api.telegram.org/bot{TOKEN}"
 
 # Режим диагностики: True — скрипт только печатает ID входящих сообщений
 # в логи, ничего не пересылает. Запусти, напиши сообщения в нужную вкладку
 # и в группу-получатель, забери ID из логов, впиши выше, поставь False.
-DIAGNOSTIC = True
+DIAGNOSTIC = False
 
 
 def process_message(msg):
